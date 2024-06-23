@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #add8e6;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000;
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100px;
+        }
+        header{background-color: darkred; padding: 20px; text-align: center;}
+    nav{background-color:#52BE80 
+; padding: 10px; text-align: center;}
+    nav a {color: blue; text-decoration: none;margin: 0 10px; font-family: sans-serif;}
+    nav a:hover{color: yellow;text-decoration: underline;}
+    footer{background-color: white; padding: 50px; text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1><font color="white">Registration Form</font></h1>
+    </header>
+    <nav>
+        <a href="file:///C:/Users/mkver/OneDrive/Desktop/index.html">Back To Home</a>
+    </nav>
+    <form>
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" name="firstname">
+        
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname">
+        
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <option value="course3">Course 3</option>
+        </select>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <label>Languages Known:</label>
+        <input type="checkbox" id="hindi" name="language" value="hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="english" name="language" value="english">
+        <label for="english">English</label>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="+91">
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <input type="submit" value="Submit">
+    </form>
+<footer>
+    aashitank.online
+</footer>
+</body>
+</html>
